@@ -3,7 +3,7 @@
 
 <head>
     <!-- Page Title -->
-    <title>HTML Learing | Page Layout</title>
+    <title>HTML Learning | Page Layout</title>
 
     <!-- Meta Information -->
     <meta charset="UTF-8">
@@ -15,9 +15,10 @@
     <meta name="author" content="Shahlal Hossain">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="mystyle.css">
+    <!-- <link rel="stylesheet" href="mystyle.css"> -->
     <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
     <!-- External JavaScript -->
     <script type="text/javascript" src="jquery.js"></script>
@@ -25,7 +26,19 @@
 
     <!-- Internal CSS -->
     <style type="text/css">
+        body {
+            background-color: rgb(243, 239, 239);
+        }
 
+        /* p {
+            margin-left: 50px;
+            font-weight: bold;
+            color: rgb(11, 161, 11);
+        } */
+
+        .table {
+            background-color: gainsboro !important;
+        }
     </style>
 </head>
 
@@ -41,59 +54,95 @@
             <!-- Link to Another Page from the Same Site -->
             <a href="file.html">File Page</a>
 
-
-            <table>
-                <thead>
-                    <tr>
-                        <td>Name</td>
-                        <td>Mobile</td>
-                        <td>Age</td>
-                        <td>Email</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Shahlal Hossain</td>
-                        <td>01223355664</td>
-                        <td>34</td>
-                        <td>shahlal@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Shahlal Hossain</td>
-                        <td>01223355664</td>
-                        <td>34</td>
-                        <td>shahlal@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Shahlal Hossain</td>
-                        <td>01223355664</td>
-                        <td>34</td>
-                        <td>shahlal@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Shahlal Hossain</td>
-                        <td>01223355664</td>
-                        <td>34</td>
-                        <td>shahlal@gmail.com</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
-
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
         </nav>
     </header>
+
+    <div>
+        <table class="table table-bordered table-hover table-striped table-sm">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shahlal Hossain</td>
+                    <td>01223355664</td>
+                    <td>34</td>
+                    <td>shahlal@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Shahlal Hossain</td>
+                    <td>01223355664</td>
+                    <td>34</td>
+                    <td>shahlal@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Shahlal Hossain</td>
+                    <td>01223355664</td>
+                    <td>34</td>
+                    <td>shahlal@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Shahlal Hossain</td>
+                    <td>01223355664</td>
+                    <td>34</td>
+                    <td>shahlal@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <ol>
+            <li>Apple</li>
+            <li>Oragne</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Palm</li>
+        </ol>
+
+        <ul>
+            <li>Apple</li>
+            <li>Oragne</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Palm</li>
+        </ul>
+
+        <h1>This is a heading example 1</h1>
+        <h2>This is a heading example 1</h2>
+        <h3>This is a heading example 1</h3>
+        <h4>This is a heading example 1</h4>
+        <h5>This is a heading example 1</h5>
+        <h6>This is a heading example 1</h6>
+
+
+        <!-- Something Written Here -->
+        <p style="color: aquamarine; background-color: black;">
+            This is a paragraph.
+            This is a paragraph.
+            This is a paragraph.
+            This is a paragraph.
+        </p>
+
+        <pre>
+            This is a paragraph.
+            This is a paragraph.
+            This is a paragraph.
+            This is a paragraph.
+        </pre>
+
+        <img src="images/picture.jpeg" alt="Shahlal Hossain" width="500" height="500">
+
+        <img src="https://media.istockphoto.com/photos/multicolored-powder-explosion-on-white-background-color-dust-splash-picture-id1126166728?k=20&m=1126166728&s=612x612&w=0&h=nfjwQLIMPQXGFAqof1HaNPyOK54p_AJJ0-46dFpcblw="
+            alt="Shahlal Hossain" width="500" height="500">
+
+        <p id="demo">
+
+        </p>
+    </div>
 
     <footer>
 
@@ -106,6 +155,8 @@
     <!-- Internal JavaScript -->
     <script type="text/javascript">
 
+        document.write("Hello World!");
+        document.getElementById("demo").innerHTML = "My First JavaScript";
     </script>
 </body>
 
